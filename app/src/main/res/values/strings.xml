@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SportzBuzz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchevents">Search Events</string>
+    <string name="searchtobegin">Search To Begin</string>
+    <string name="league">League:</string>
+    <string name="noeventsitems">No Events With the Particular Search</string>
+
+    <style name="get_started">Get Started</style>
+</resources>

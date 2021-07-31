@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#71BC1A</color>
+    <color name="colorPrimary">#4169E1</color>
+    <color name="colorPrimary_cardview_image">#6A3E6AE1</color>
+    <color name="purple_700">#4CAF50</color>
+    <color name="teal_200">#1C5C1F</color>
+    <color name="teal_700">#4FB8E8</color>
+    <color name="grey_700">#D0858484</color>
+    <color name="black">#FF000000</color>  <color name="sky_button_color">#4bd2cc</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    //Transparent Colors
+    <color name="trans_green">#7525d366</color>
+    <color name="trans_red">#A3D50000</color>
+    <color name="trans_purple">#A86200EA</color>
+    <color name="trans_blue">#A3304FFE</color>
+    <color name="trans_yellow">#A6FFD600</color>
+
+
+    //Walkthrough Colors
+    <color name="custom_color_primary">#643AE7</color>
+    <color name="custom_color_secondary">#FF8F00</color>
+    <color name="custom_color_secondary_light">#FFD299</color>
+    <color name="custom_color_background">#FFFFFF</color>
+    <color name="custom_color_text_primary">#060906</color>
+    <color name="custom_color_text_secondary">#57464747</color>
+    <color name="custom_color_cardview_background">#900091EA</color>
+
+</resources>

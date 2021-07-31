@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/eventCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/custom_color_cardview_background">
+
+
+                <TextView
+                    android:id="@+id/eventLeague"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_vertical"
+                    android:text="Text View"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/eventHomeTeam"
+                    android:layout_width="105dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/list_image_background"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/eventLeague"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/eventAwayTeam"
+                    android:layout_width="105dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/list_image_background"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/eventHomeTeam"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/eventVenue"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/homeTeamName"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@+id/eventHomeTeam"
+                    app:layout_constraintStart_toStartOf="@+id/eventHomeTeam"
+                    app:layout_constraintTop_toBottomOf="@+id/eventHomeTeam" />
+
+                <TextView
+                    android:id="@+id/awayTeamName"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/eventAwayTeam"
+                    app:layout_constraintTop_toBottomOf="@+id/eventAwayTeam" />
+
+                <TextView
+                    android:id="@+id/versusText"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_vertical"
+                    android:text="VS"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/eventAwayTeam"
+                    app:layout_constraintEnd_toStartOf="@+id/eventAwayTeam"
+                    app:layout_constraintStart_toEndOf="@+id/eventHomeTeam"
+                    app:layout_constraintTop_toBottomOf="@+id/eventVenue" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

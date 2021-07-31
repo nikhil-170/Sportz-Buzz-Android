@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".view.ui.SearchFragment"
+        >
+
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="searchViewModel"
+            type="com.example.reachmobi_casestudy.viewModel.SearchFragmentViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:animateLayoutChanges="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/custom_color_primary">
+
+                <com.mancj.materialsearchbar.MaterialSearchBar
+                    android:id="@+id/searchBar"
+                    style="@style/MaterialSearchBarLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:mt_navIconEnabled="true"
+                    app:mt_placeholder="@string/searchevents"
+                    tools:ignore="OnClick" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/eventsDisplayList"
+                    android:layout_width="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:padding="3dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/beginText"
+                android:layout_width="270dp"
+                android:layout_height="90dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/searchtobegin"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="30sp"/>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>
